@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 4%;
+  --foreground: 0 0% 100%;
+
+  --primary: 43 56% 52%;
+  --primary-foreground: 0 0% 4%;
+
+  --secondary: 0 0% 10%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 60%;
+
+  --accent: 43 70% 45%;
+  --accent-foreground: 0 0% 4%;
+
+  --border: 43 56% 52% / 0.2;
+  --ring: 43 56% 52%;
+
+  --radius: 0.125rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
